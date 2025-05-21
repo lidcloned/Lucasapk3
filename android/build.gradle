@@ -31,30 +31,4 @@ tasks.register("clean", Delete) {
 }
 
 
----
-
-O que foi feito?
-
-Adicionei o bloco buildscript com:
-
-ext.kotlin_version definido.
-
-Repositórios.
-
-Dependências necessárias para Android Gradle Plugin e Kotlin.
-
-
-Mantive seu allprojects e configurações de build dirs.
-
-
-
----
-
-Próximo passo
-
-Salve esse arquivo como android/build.gradle e rode um flutter clean no seu projeto.
-
-Depois, tente rodar o build de novo.
-
-Se quiser, posso ajudar a revisar seu android/app/build.gradle também pra garantir que está 100%. Quer?
 
