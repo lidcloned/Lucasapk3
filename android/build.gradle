@@ -1,3 +1,16 @@
+
+buildscript {
+    ext.kotlin_version = '1.9.10' // Versão Kotlin mais recente estável (maio/2025)
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.1.1' // Versão Gradle Plugin compatível com Kotlin 1.9.x
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
 allprojects {
     repositories {
         google()
@@ -16,3 +29,32 @@ subprojects {
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }
+
+
+---
+
+O que foi feito?
+
+Adicionei o bloco buildscript com:
+
+ext.kotlin_version definido.
+
+Repositórios.
+
+Dependências necessárias para Android Gradle Plugin e Kotlin.
+
+
+Mantive seu allprojects e configurações de build dirs.
+
+
+
+---
+
+Próximo passo
+
+Salve esse arquivo como android/build.gradle e rode um flutter clean no seu projeto.
+
+Depois, tente rodar o build de novo.
+
+Se quiser, posso ajudar a revisar seu android/app/build.gradle também pra garantir que está 100%. Quer?
+
